@@ -10,4 +10,4 @@
 
 [RxBinding](https://github.com/JakeWharton/RxBinding)
 
-<img src="https://github.com/xiaofei-dev/Radix/blob/master/art/GIF_20170503_200813.gif" width="50%" height="50%">
+<img src="https://github.com/xiaofei-dev/Radix/blob/master/art/GIF_20170503_200813.gif" width="40%" height="40%">
