@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingBottom="30dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    tools:context="com.github.xiaofei_dev.radix.MainActivity">
+
+
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ten"
+        android:layout_alignBaseline="@+id/editTenContainer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editTenContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/ten"/>
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ten"
+        android:layout_marginTop="37dp"
+        android:text="@string/two"/>
+
+    <EditText
+        android:id="@+id/editTwoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:layout_alignBaseline="@+id/two"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/two"/>
+
+    <TextView
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTwoContainer"
+        android:layout_marginTop="28dp"
+        android:text="@string/eight"/>
+
+    <EditText
+        android:id="@+id/editEightContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/eight"
+        android:layout_below="@+id/editTwoContainer"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="numberSigned"/>
+
+    <TextView
+        android:id="@+id/sixteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editEightContainer"
+        android:layout_marginTop="25dp"
+        android:text="@string/sixteen"/>
+
+    <EditText
+        android:id="@+id/editSixteenContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:layout_alignBaseline="@+id/sixteen"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/sixteen"/>
+</RelativeLayout>
