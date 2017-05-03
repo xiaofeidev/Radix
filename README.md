@@ -10,4 +10,4 @@
 
 [RxBinding](https://github.com/JakeWharton/RxBinding)
 
-<img src="https://github.com/xiaofei-dev/Gank/blob/master/art/enframe_2017-04-30-10-31-21.png" width="50%" height="50%">
+<img src="https://github.com/xiaofei-dev/Radix/blob/master/art/GIF_20170503_200813.gif" width="50%" height="50%">
