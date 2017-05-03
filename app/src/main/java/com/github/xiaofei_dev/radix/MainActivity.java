@@ -61,13 +61,15 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         Disposable disposable1 =
                 RxTextView.textChanges(mEditTen)
+                        //在一次事件发生后的一段时间内没有新操作，则发出这次事件
                         .debounce(500, TimeUnit.MILLISECONDS)
-                        //转换线程
+                        //转换线程，异步监听事件
                         .observeOn(Schedulers.newThread())
+                        //这里切换成主线程以操作 UI 组件
                         .observeOn(AndroidSchedulers.mainThread())
-                        .subscribeWith(new DisposableObserver<CharSequence>() {
+                        .subscribe(new Consumer<CharSequence>() {
                             @Override
-                            public void onNext(CharSequence value) {
+                            public void accept(CharSequence value) throws Exception {
                                 if (mContainer.findFocus().getId() == R.id.editTen) {
                                     mEditTwoContainer.setErrorEnabled(false);
                                     mEditEightContainer.setErrorEnabled(false);
@@ -85,18 +87,40 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                 }
                             }
-
-                            @Override
-                            public void onError(Throwable e) {
-
-                            }
-
-                            @Override
-                            public void onComplete() {
-
-                            }
                         });
         compositeDisposable.add(disposable1);
+//                        .subscribeWith(new DisposableObserver<CharSequence>() {
+//                            @Override
+//                            public void onNext(CharSequence value) {
+//                                if (mContainer.findFocus().getId() == R.id.editTen) {
+//                                    mEditTwoContainer.setErrorEnabled(false);
+//                                    mEditEightContainer.setErrorEnabled(false);
+//                                    mEditSixteenContainer.setErrorEnabled(false);
+//                                    if (value.toString().equals("")) {
+//                                        mEditTwo.setText("");
+//                                        mEditEight.setText("");
+//                                        mEditSixteen.setText("");
+//                                    } else {
+//                                        Long n = Long.valueOf(value.toString());
+//                                        mEditTwo.setText(Long.toBinaryString(n));
+//                                        mEditEight.setText(Long.toOctalString(n));
+//                                        mEditSixteen.setText(Long.toHexString(n));
+//                                        //mEditTenContainer.setErrorEnabled(false);
+//                                    }
+//                                }
+//                            }
+//
+//                            @Override
+//                            public void onError(Throwable e) {
+//
+//                            }
+//
+//                            @Override
+//                            public void onComplete() {
+//
+//                            }
+//                        });
+
 
         Disposable disposable2 =
                 RxTextView.textChanges(mEditTwo)

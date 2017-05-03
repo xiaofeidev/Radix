@@ -101,6 +101,6 @@
             android:maxLength="9"
             android:digits="0123456789abcdef"
             android:ems="10"
-            android:inputType="number"/>
+            android:inputType="textUri"/>
     </android.support.design.widget.TextInputLayout>
 </RelativeLayout>
