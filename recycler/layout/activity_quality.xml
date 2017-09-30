@@ -75,7 +75,6 @@
             android:layout_height="match_parent"
             android:selectAllOnFocus="true"
             android:maxLength="12"
-            android:digits="01234567"
             android:ems="10"
             android:inputType="number"/>
     </android.support.design.widget.TextInputLayout>
@@ -99,18 +98,7 @@
             android:layout_height="match_parent"
             android:selectAllOnFocus="true"
             android:maxLength="9"
-            android:digits="0123456789abcdef"
             android:ems="10"
-            android:inputType="textUri"/>
+            android:inputType="numberDecimal"/>
     </android.support.design.widget.TextInputLayout>
-
-    <!--<TextView-->
-    <!--android:id="@+id/exit"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="30dp"-->
-    <!--android:textColor="@color/posColor"-->
-    <!--android:text="@string/exit"-->
-    <!--android:layout_below="@+id/editSixteenContainer"-->
-    <!--android:layout_alignEnd="@+id/editSixteenContainer"-->
-    <!--android:background="@drawable/text_bg"/>-->
 </RelativeLayout>

@@ -16,7 +16,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
-import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     TextInputLayout mEditSixteenContainer;
     @BindView(R.id.container)
     RelativeLayout mContainer;
+//    @BindView(R.id.exit)
+//    TextView mExit;
 
     private final CompositeDisposable compositeDisposable = new CompositeDisposable();
     private static final String TAG = "MainActivity";
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         //在一次事件发生后的一段时间内没有新操作，则发出这次事件
                         .debounce(500, TimeUnit.MILLISECONDS)
                         //转换线程，异步监听事件
-                        .observeOn(Schedulers.newThread())
+                        .subscribeOn(Schedulers.newThread())
                         //这里切换成主线程以操作 UI 组件
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<CharSequence>() {
@@ -126,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 RxTextView.textChanges(mEditTwo)
                         .debounce(500, TimeUnit.MILLISECONDS)
                         //转换线程
-                        .observeOn(Schedulers.newThread())
+                        .subscribeOn(Schedulers.newThread())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<CharSequence>() {
                             @Override
@@ -161,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                 RxTextView.textChanges(mEditEight)
                         .debounce(500, TimeUnit.MILLISECONDS)
                         //转换线程
-                        .observeOn(Schedulers.newThread())
+                        .subscribeOn(Schedulers.newThread())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<CharSequence>(){
                             @Override
@@ -195,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
                 RxTextView.textChanges(mEditSixteen)
                         .debounce(500, TimeUnit.MILLISECONDS)
                         //转换线程
-                        .observeOn(Schedulers.newThread())
+                        .subscribeOn(Schedulers.newThread())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<CharSequence>(){
                             @Override
@@ -224,6 +225,13 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
         compositeDisposable.add(disposable4);
+
+//        mExit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                moveTaskToBack(true);
+//            }
+//        });
     }
 
 }

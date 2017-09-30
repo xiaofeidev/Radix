@@ -1,14 +1,17 @@
 <resources>
-    <string name="app_name">Radix</string>
-    <string name="ten">十进制:</string>
-    <string name="two">二进制:</string>
-    <string name="eight">八进制:  </string>
-    <string name="sixteen">十六进制:</string>
 
-    <string name="input10">十进制输入框</string>
-    <string name="input2">二进制输入框</string>
-    <string name="input8">八进制输入框</string>
-    <string name="input16">十六进制输入框</string>
+    <!--<string name="ten">十进制:</string>-->
+    <!--<string name="two">二进制:</string>-->
+    <!--<string name="eight">八进制:  </string>-->
+    <!--<string name="sixteen">十六进制:</string>-->
+
+    <string name="app_name">Radix</string>
+
+    <string name="input10">十进制(DEC)输入框</string>
+    <string name="input2">二进制输(BIN)入框</string>
+    <string name="input8">八进制(OCT)输入框</string>
+    <string name="input16">十六进制(HEX)输入框</string>
+
 
     <string name="errorHint">非法字符，请输入有效纯数字</string>
     <string name="errorHintLimit">数字需小于2147483647</string>
@@ -16,4 +19,9 @@
     <string name="errorTwo">二进制数字需小于1001010100000010111110001111111111</string>
     <string name="errorEight">八进制数字需小于112402761777</string>
     <string name="errorSixteen">十六进制数字需小于2540be3ff</string>
+
+    <!--<string name="kg">千克(kg)输入框</string>-->
+    <!--<string name="g">克(g)输入框</string>-->
+    <!--<string name="pound">磅(pound)输入框</string>-->
+    <!--<string name="ounce">盎司(ounce)输入框</string>-->
 </resources>
