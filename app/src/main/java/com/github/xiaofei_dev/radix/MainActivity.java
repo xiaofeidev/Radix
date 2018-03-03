@@ -38,11 +38,10 @@ public class MainActivity extends AppCompatActivity {
     TextInputLayout mEditSixteenContainer;
     @BindView(R.id.container)
     RelativeLayout mContainer;
-//    @BindView(R.id.exit)
-//    TextView mExit;
 
-    private final CompositeDisposable compositeDisposable = new CompositeDisposable();
+    private final CompositeDisposable mCompositeDisposable = new CompositeDisposable();
     private static final String TAG = "MainActivity";
+    //允许输入的最大值
     private final String MAXVALUE = "9999999999";
 
     @Override
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        compositeDisposable.clear();
+        mCompositeDisposable.clear();
     }
 
     private void initView() {
@@ -89,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
-        compositeDisposable.add(disposable1);
+        mCompositeDisposable.add(disposable1);
 //                        .subscribeWith(new DisposableObserver<CharSequence>() {
 //                            @Override
 //                            public void onNext(CharSequence value) {
@@ -151,12 +150,11 @@ public class MainActivity extends AppCompatActivity {
                                             mEditSixteen.setText(Long.toHexString(n));
                                             mEditTwoContainer.setErrorEnabled(false);
                                         }
-
                                     }
                                 }
                             }
                         });
-        compositeDisposable.add(disposable2);
+        mCompositeDisposable.add(disposable2);
 
         Disposable disposable3 =
                 RxTextView.textChanges(mEditEight)
@@ -190,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
-        compositeDisposable.add(disposable3);
+        mCompositeDisposable.add(disposable3);
 
         Disposable disposable4 =
                 RxTextView.textChanges(mEditSixteen)
@@ -224,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
-        compositeDisposable.add(disposable4);
+        mCompositeDisposable.add(disposable4);
 
 //        mExit.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -233,7 +231,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
-
 }
 
 
