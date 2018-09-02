@@ -6,8 +6,8 @@ android {
         applicationId "com.github.xiaofei_dev.radix"
         minSdkVersion 17
         targetSdkVersion 27
-        versionCode 6
-        versionName "1.4.0"
+        versionCode 7
+        versionName "1.4.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -37,8 +37,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     testImplementation 'junit:junit:4.12'
 
     implementation 'com.android.support:appcompat-v7:27+'

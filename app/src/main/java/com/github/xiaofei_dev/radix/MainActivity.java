@@ -120,8 +120,6 @@ public class MainActivity extends AppCompatActivity {
 //
 //                            }
 //                        });
-
-
         Disposable disposable2 =
                 RxTextView.textChanges(mEditTwo)
                         .debounce(500, TimeUnit.MILLISECONDS)
@@ -223,7 +221,6 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
         mCompositeDisposable.add(disposable4);
-
 //        mExit.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
