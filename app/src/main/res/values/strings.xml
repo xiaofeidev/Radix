@@ -1,21 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Radix</string>
+    <string name="input10">DEC</string>
+    <string name="input2">BIN</string>
+    <string name="input8">OCT</string>
+    <string name="input16">HEX</string>
 
-    <string name="input10">十进制(DEC)输入框</string>
-    <string name="input2">二进制(BIN)输入框</string>
-    <string name="input8">八进制(OCT)输入框</string>
-    <string name="input16">十六进制(HEX)输入框</string>
 
+    <string name="errorHint">Invaild symbol!</string>
+    <string name="errorHintLimit">Must be less than2147483647</string>
 
-    <string name="errorHint">非法字符，请输入有效纯数字</string>
-    <string name="errorHintLimit">数字需小于2147483647</string>
-
-    <string name="errorTwo">二进制数字需小于1001010100000010111110001111111111</string>
-    <string name="errorEight">八进制数字需小于112402761777</string>
-    <string name="errorSixteen">十六进制数字需小于2540be3ff</string>
-
-    <!--<string name="kg">千克(kg)输入框</string>-->
-    <!--<string name="g">克(g)输入框</string>-->
-    <!--<string name="pound">磅(pound)输入框</string>-->
-    <!--<string name="ounce">盎司(ounce)输入框</string>-->
+    <string name="errorTwo">Must be less than 1001010100000010111110001111111111</string>
+    <string name="errorEight">Must be less than 112402761777</string>
+    <string name="errorSixteen">Must be less than 2540be3ff</string>
 </resources>
