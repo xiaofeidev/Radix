@@ -1,14 +1,8 @@
 <resources>
-
-    <!--<string name="ten">十进制:</string>-->
-    <!--<string name="two">二进制:</string>-->
-    <!--<string name="eight">八进制:  </string>-->
-    <!--<string name="sixteen">十六进制:</string>-->
-
     <string name="app_name">Radix</string>
 
     <string name="input10">十进制(DEC)输入框</string>
-    <string name="input2">二进制输(BIN)入框</string>
+    <string name="input2">二进制(BIN)输入框</string>
     <string name="input8">八进制(OCT)输入框</string>
     <string name="input16">十六进制(HEX)输入框</string>
 

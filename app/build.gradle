@@ -6,8 +6,8 @@ android {
         applicationId "com.github.xiaofei_dev.radix"
         minSdkVersion 17
         targetSdkVersion 27
-        versionCode 7
-        versionName "1.4.1"
+        versionCode 8
+        versionName "1.4.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
