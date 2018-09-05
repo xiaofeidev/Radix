@@ -13,3 +13,8 @@
 # 界面预览
 
 <img src="https://github.com/xiaofei-dev/Radix/blob/master/art/GIF_20170503_200813.gif" width="30%" height="30%">
+
+# APK下载
+[CoolApk](https://www.coolapk.com/apk/137663)
+
+[GooglePlay](https://play.google.com/store/apps/details?id=com.github.xiaofei_dev.radix)
