@@ -89,37 +89,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
         mCompositeDisposable.add(disposable1);
-//                        .subscribeWith(new DisposableObserver<CharSequence>() {
-//                            @Override
-//                            public void onNext(CharSequence value) {
-//                                if (mContainer.findFocus().getId() == R.id.editTen) {
-//                                    mEditTwoContainer.setErrorEnabled(false);
-//                                    mEditEightContainer.setErrorEnabled(false);
-//                                    mEditSixteenContainer.setErrorEnabled(false);
-//                                    if (value.toString().equals("")) {
-//                                        mEditTwo.setText("");
-//                                        mEditEight.setText("");
-//                                        mEditSixteen.setText("");
-//                                    } else {
-//                                        Long n = Long.valueOf(value.toString());
-//                                        mEditTwo.setText(Long.toBinaryString(n));
-//                                        mEditEight.setText(Long.toOctalString(n));
-//                                        mEditSixteen.setText(Long.toHexString(n));
-//                                        //mEditTenContainer.setErrorEnabled(false);
-//                                    }
-//                                }
-//                            }
-//
-//                            @Override
-//                            public void onError(Throwable e) {
-//
-//                            }
-//
-//                            @Override
-//                            public void onComplete() {
-//
-//                            }
-//                        });
+
         Disposable disposable2 =
                 RxTextView.textChanges(mEditTwo)
                         .debounce(500, TimeUnit.MILLISECONDS)

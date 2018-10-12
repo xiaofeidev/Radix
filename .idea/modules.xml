@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Radix.iml" filepath="$PROJECT_DIR$/Radix.iml" />
-      <module fileurl="file://D:\androidProject\AndroidProjectMe\Radix\Radix.iml" filepath="D:\androidProject\AndroidProjectMe\Radix\Radix.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\androidProject\AndroidProjectMe\Radix\app\app.iml" filepath="D:\androidProject\AndroidProjectMe\Radix\app\app.iml" />
     </modules>
   </component>
 </project>
