@@ -1,17 +1,18 @@
 package com.github.xiaofei_dev.radix;
 
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
+import com.google.android.material.textfield.TextInputLayout;
 import com.jakewharton.rxbinding2.widget.RxTextView;
 
 import java.util.concurrent.TimeUnit;
 
+import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
@@ -43,12 +44,13 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     //允许输入的最大值
     private final String MAXVALUE = "9999999999";
+    private Unbinder mUnBinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+        mUnBinder = ButterKnife.bind(this);
         initView();
     }
 
@@ -56,9 +58,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         mCompositeDisposable.clear();
+        if (mUnBinder != null){
+            mUnBinder.unbind();
+        }
     }
 
     private void initView() {
+        ((EditText)findViewById(R.id.editTen)).requestFocusFromTouch();
         Disposable disposable1 =
                 RxTextView.textChanges(mEditTen)
                         //在一次事件发生后的一段时间内没有新操作，则发出这次事件
@@ -191,12 +197,6 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
         mCompositeDisposable.add(disposable4);
-//        mExit.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                moveTaskToBack(true);
-//            }
-//        });
     }
 }
 

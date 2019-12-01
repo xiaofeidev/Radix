@@ -14,7 +14,7 @@
         android:paddingEnd="15dp"
         tools:context="com.github.xiaofei_dev.radix.MainActivity">
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editTenContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,9 +36,9 @@
                 android:digits="0123456789"
                 android:ems="10"
                 android:inputType="number"/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editTwoContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,9 +59,9 @@
                 android:digits="01"
                 android:ems="10"
                 android:inputType="number"/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editEightContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,9 +82,9 @@
                 android:digits="01234567"
                 android:ems="10"
                 android:inputType="number"/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editSixteenContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
                 android:digits="0123456789abcdef"
                 android:ems="10"
                 android:inputType="textUri"/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!--<TextView-->
         <!--android:id="@+id/exit"-->
