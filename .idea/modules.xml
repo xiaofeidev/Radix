@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Radix.iml" filepath="$PROJECT_DIR$/Radix.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Radix.iml" filepath="$PROJECT_DIR$/.idea/modules/Radix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Radix.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Radix.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Radix.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Radix.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Radix.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Radix.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Radix.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Radix.app.unitTest.iml" />
     </modules>
   </component>
 </project>

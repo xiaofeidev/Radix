@@ -4,12 +4,13 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputLayout;
 import com.jakewharton.rxbinding2.widget.RxTextView;
 
 import java.util.concurrent.TimeUnit;
 
-import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -20,7 +21,6 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
-
     @BindView(R.id.editTen)
     EditText mEditTen;
     @BindView(R.id.editTwo)
@@ -199,12 +199,3 @@ public class MainActivity extends AppCompatActivity {
         mCompositeDisposable.add(disposable4);
     }
 }
-
-
-
-
-
-
-
-
-
