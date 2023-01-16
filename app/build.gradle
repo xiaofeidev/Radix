@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.github.xiaofei_dev.radix"
         minSdkVersion 17
-        targetSdkVersion 32
-        versionCode 12
-        versionName "1.5.1"
+        targetSdkVersion 33
+        versionCode 13
+        versionName "1.5.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
