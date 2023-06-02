@@ -1,0 +1,14 @@
+<resources>
+    <string name="input10">Dezimalismus</string>
+    <string name="input2">Binär</string>
+    <string name="input8">Oktal</string>
+    <string name="input16">Hexadezimal</string>
+
+
+    <string name="errorHint">Ungültiges Symbol!</string>
+    <string name="errorHintLimit">Muss kleiner als 2147483647 sein</string>
+
+    <string name="errorTwo">Muss kleiner als 1001010100000010111110001111111111 sein</string>
+    <string name="errorEight">Muss kleiner als 112402761777 sein</string>
+    <string name="errorSixteen">Muss kleiner als 2540be3ff sein</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="input10">десятичный</string>
+    <string name="input2">Бинарный</string>
+    <string name="input8">восьмеричный</string>
+    <string name="input16">шестнадцатеричный</string>
+
+
+    <string name="errorHint">Неверный символ!</string>
+    <string name="errorHintLimit">Должно быть меньше 2147483647</string>
+
+    <string name="errorTwo">Должно быть меньше 1001010100000010111110001111111111</string>
+    <string name="errorEight">Должно быть меньше 112402761777</string>
+    <string name="errorSixteen">Должно быть меньше 2540be3ff</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="input10">Décimalisme</string>
+    <string name="input2">Binaire</string>
+    <string name="input8">Octale</string>
+    <string name="input16">Hexadécimal</string>
+
+
+    <string name="errorHint"><![CDATA[Symbole invalide !]]></string>
+    <string name="errorHintLimit">Doit être inférieur à 2147483647</string>
+
+    <string name="errorTwo">Doit être inférieur à 1001010100000010111110001111111111</string>
+    <string name="errorEight">Doit être inférieur à 112402761777</string>
+    <string name="errorSixteen">Doit être inférieur à 2540be3ff</string>
+</resources>

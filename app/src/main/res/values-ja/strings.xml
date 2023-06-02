@@ -1,0 +1,14 @@
+<resources>
+    <string name="input10">十進法</string>
+    <string name="input2">バイナリ</string>
+    <string name="input8">8 進数</string>
+    <string name="input16">16 進数</string>
+
+
+    <string name="errorHint">シンボルが無効です!</string>
+    <string name="errorHintLimit">2147483647 未満である必要があります</string>
+
+    <string name="errorTwo">1001010100000010111110001111111111 未満である必要があります</string>
+    <string name="errorEight">112402761777 未満である必要があります</string>
+    <string name="errorSixteen">2540be3ff 未満である必要があります</string>
+</resources>

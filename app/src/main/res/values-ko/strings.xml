@@ -1,0 +1,14 @@
+<resources>
+    <string name="input10">십진법</string>
+    <string name="input2">바이너리</string>
+    <string name="input8">8진법</string>
+    <string name="input16">16진수</string>
+
+
+    <string name="errorHint">잘못된 기호!</string>
+    <string name="errorHintLimit">2147483647보다 작아야 합니다.</string>
+
+    <string name="errorTwo">1001010100000010111110001111111111보다 작아야 합니다.</string>
+    <string name="errorEight">112402761777보다 작아야 합니다.</string>
+    <string name="errorSixteen">2540be3ff 미만이어야 합니다.</string>
+</resources>

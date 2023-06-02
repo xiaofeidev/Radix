@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-
     <RelativeLayout
         android:id="@+id/container"
         android:layout_width="wrap_content"
@@ -13,12 +12,11 @@
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         tools:context="com.github.xiaofei_dev.radix.MainActivity">
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editTenContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:hint="@string/input10"
@@ -88,7 +86,7 @@
             android:id="@+id/editSixteenContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
+            android:layout_marginBottom="10dp"
             android:layout_below="@id/editEightContainer"
             android:layout_centerHorizontal="true"
             android:hint="@string/input16"

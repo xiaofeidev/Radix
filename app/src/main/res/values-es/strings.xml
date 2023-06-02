@@ -1,0 +1,14 @@
+<resources>
+    <string name="input10">decimalismo</string>
+    <string name="input2">Binario</string>
+    <string name="input8">octales</string>
+    <string name="input16">hexadecimal</string>
+
+
+    <string name="errorHint">¡Símbolo inválido!</string>
+    <string name="errorHintLimit">Debe ser inferior a 2147483647</string>
+
+    <string name="errorTwo">Debe ser menor que 1001010100000010111110001111111111</string>
+    <string name="errorEight">Debe ser inferior a 112402761777</string>
+    <string name="errorSixteen">Debe ser inferior a 2540be3ff</string>
+</resources>

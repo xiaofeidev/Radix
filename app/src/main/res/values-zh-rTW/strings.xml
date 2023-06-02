@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="input10">十進制(DEC)輸入框</string>
+    <string name="input2">二進制(BIN)輸入框</string>
+    <string name="input8">八進制(OCT)輸入框</string>
+    <string name="input16">十六進制(HEX)輸入框</string>
+
+
+    <string name="errorHint">非法字符，請輸入有效純數字</string>
+    <string name="errorHintLimit">數字需小於 2147483647</string>
+
+    <string name="errorTwo">二進制數字需小於 1001010100000010111110001111111111</string>
+    <string name="errorEight">八進制數字需小於 112402761777</string>
+    <string name="errorSixteen">十六進制數字需小於 2540be3ff</string>
+</resources>
