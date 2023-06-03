@@ -12,7 +12,7 @@
 
 # 界面预览
 
-<img src="https://github.com/xiaofei-dev/Radix/blob/master/art/GIF_20170503_200813.gif" width="30%" height="30%">
+<img src="art/GIF_20170503_200813.gif" width="30%" height="30%">
 
 # APK下载
 [CoolApk](https://www.coolapk.com/apk/137663)
