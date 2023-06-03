@@ -11,11 +11,11 @@
 [RxBinding](https://github.com/JakeWharton/RxBinding)
 
 # 界面预览
-<img src="art/1.png" width="30%" height="30%">
-<img src="art/2.png" width="30%" height="30%">
-<img src="art/3.png" width="30%" height="30%">
-<img src="art/4.png" width="30%" height="30%">
-<img src="art/demo.gif" width="30%" height="30%">
+<img src="art/1.png" width="20%" height="20%">
+<img src="art/2.png" width="20%" height="20%">
+<img src="art/3.png" width="20%" height="20%">
+<img src="art/4.png" width="20%" height="20%">
+<img src="art/demo.gif" width="20%" height="20%">
 
 # APK下载
 [GooglePlay](https://play.google.com/store/apps/details?id=com.github.xiaofei_dev.radix)
